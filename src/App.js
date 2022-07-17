@@ -1,9 +1,17 @@
-import "./App.css";
+import Title from "./Title";
+import Question from "./Question";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header"></header>
+      <body>
+        <header>
+          <Title />
+        </header>
+        <main>
+          <Question />
+        </main>
+      </body>
     </div>
   );
 }
