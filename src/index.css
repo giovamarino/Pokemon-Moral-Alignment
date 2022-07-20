@@ -5,16 +5,43 @@
 }
 
 body {
-  background-color: aqua;
+  background-color: cornflowerblue;
+}
+
+.container {
   width: 1140px;
   margin: auto;
+  background-color: aqua;
+  height: 100vh;
+  box-shadow: 2px 0px 5px rgb(78, 78, 78);
 }
 
 .Title {
+  width: 50%;
+  border-radius: 5px;
+  margin: 0px auto 30%;
+  /* padding: 20px 0 0 0; */
   background-color: burlywood;
-  border: 2px solid black;
+  text-align: center;
 }
 
+/* -------------------- */
+
 .Question {
+  width: 70%;
+  margin: 0 auto 0;
   background-color: beige;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 0px 5px rgb(78, 78, 78);
+}
+
+.Question div {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.Question p {
+  text-align: center;
 }
