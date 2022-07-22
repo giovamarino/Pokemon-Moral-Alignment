@@ -1,5 +1,6 @@
 import Title from "./Title";
 import Question from "./Question";
+import Begin from "./Begin";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
             <Title />
           </header>
           <main>
+            <Begin />
             <Question />
           </main>
         </div>
