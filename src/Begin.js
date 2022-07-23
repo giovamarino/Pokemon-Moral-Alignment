@@ -1,7 +1,9 @@
 const Begin = () => {
+  let handleClick = () => {};
+
   return (
-    <div class="Begin">
-      <button>Begin</button>
+    <div className="Begin">
+      <button onClick={handleClick}>Begin</button>
     </div>
   );
 };

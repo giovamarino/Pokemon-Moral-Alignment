@@ -1,6 +1,6 @@
 const Title = () => {
   return (
-    <div class="Title">
+    <div className="Title">
       <h1>Pokemon Moral Alignment</h1>
     </div>
   );

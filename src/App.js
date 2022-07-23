@@ -4,19 +4,17 @@ import Begin from "./Begin";
 
 function App() {
   return (
-    <div className="App">
-      <body>
-        <div className="container">
-          <header>
-            <Title />
-          </header>
-          <main>
-            <Begin />
-            <Question />
-          </main>
-        </div>
-      </body>
+    // <body>
+    <div className="container">
+      <header>
+        <Title />
+      </header>
+      <main>
+        <Begin />
+        <Question />
+      </main>
     </div>
+    // </body>
   );
 }
 
