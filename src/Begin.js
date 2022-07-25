@@ -1,9 +1,7 @@
-const Begin = () => {
-  let handleClick = () => {};
-
+const Begin = ({ buttonRemover }) => {
   return (
     <div className="Begin">
-      <button onClick={handleClick}>Begin</button>
+      <button onClick={buttonRemover}>Begin</button>
     </div>
   );
 };

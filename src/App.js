@@ -1,20 +1,27 @@
+import { useState } from "react";
 import Title from "./Title";
 import Question from "./Question";
 import Begin from "./Begin";
 
 function App() {
+  let [beginbutton, setBeginbutton] = useState(true);
+
   return (
-    // <body>
     <div className="container">
       <header>
         <Title />
       </header>
       <main>
-        <Begin />
-        <Question />
+        {beginbutton && (
+          <Begin
+            buttonRemover={() => {
+              setBeginbutton(false);
+            }}
+          />
+        )}
+        {!beginbutton && <Question />}
       </main>
     </div>
-    // </body>
   );
 }
 
