@@ -1,100 +1,44 @@
-@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Varela Round", sans-serif;
 }
 
-body,
-#root {
-  background: url(/public/background.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+body {
+  background-color: #ccd9ed;
 }
 
-.container {
-  width: 1140px;
-  margin: auto;
-  background: linear-gradient(
-    rgba(80, 245, 153, 1) 28%,
-    rgba(93, 245, 220, 1) 100%
-  );
-  height: 100vh;
-  box-shadow: 2px 0px 5px rgb(78, 78, 78);
-}
-
-.Title {
-  /* width: 50%; */
-  /* border-radius: 5px; */
-  margin: 0px auto 30%;
-  padding: 20px 0 0 0;
-  /* background-color: burlywood; */
+h1 {
   text-align: center;
-  font-size: 180%;
-  color: white;
-  font-family: "Mochiy Pop One", sans-serif;
+  margin: 30px 0 14%;
+  font-size: 60px;
+  font-weight: bold;
 }
 
-/* -------------------- */
-
-.Question {
-  width: 70%;
-  margin: 0 auto 0;
-  background-color: beige;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 2px 0px 5px rgb(78, 78, 78);
-  text-align: center;
+p {
+  font-size: 22px;
+  margin: 0 155px 30px;
 }
-
-.Question div {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 30px;
-}
-
-/* -------------------- */
 
 .Begin {
-  width: 70%;
-  margin: 0 auto 0;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 1px 0px 3px rgb(78, 78, 78);
+  background-color: #e5ecf6;
+  padding: 40px 20px;
+  width: 700px;
+  margin: auto;
   text-align: center;
-  display: flex;
-  background-color: #f5699a;
 }
 
-.beginLeft {
-  /* background-color: blue; */
-  width: 50%;
-}
-
-.beginLeft p {
-  margin-bottom: 90px;
-}
-
-.beginRight {
-  /* background-color: purple; */
-  width: 50%;
-}
-
-.beginRight img {
-  width: 80%;
-}
+/* -------------------- */
 
 button {
-  background-color: #f5699a;
+  background-color: #a6bde0;
   border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
+  color: black;
+  padding: 20px 60px;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  box-shadow: 2px 0px 3px rgb(78, 78, 78);
+  font-size: 21px;
 }

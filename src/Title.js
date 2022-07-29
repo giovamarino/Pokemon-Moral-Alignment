@@ -1,7 +1,7 @@
 const Title = () => {
   return (
     <div className="Title">
-      <h1>Pokemon Moral Alignment</h1>
+      <h1>Pokémon Moral Alignment</h1>
     </div>
   );
 };
