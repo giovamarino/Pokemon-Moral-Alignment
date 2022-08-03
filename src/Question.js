@@ -2,27 +2,34 @@ import data from "./data/data.json";
 import { useState } from "react";
 
 const Question = () => {
-  let i = 0;
-  let [question, setQuestion] = useState(data[i].question);
+  let [i, setI] = useState(0);
 
-  let increment = () => {
-    i++;
-  };
+  let nextQuestion = () => setI(i + 1);
+
+  console.log(i);
+  console.log(data.length);
 
   return (
     <div className="Question">
-      <p>{question}</p>
+      <p>{data[i].question}</p>
       <div>
         <button
           onClick={() => {
-            increment();
-            // console.log(i, data[i].question);
-            setQuestion(data[i].question);
+            if (i < data.length - 1) {
+              nextQuestion();
+            } else {
+            }
           }}
         >
           Yes
         </button>
-        <button onClick={() => {}}>No</button>
+        <button
+          onClick={() => {
+            nextQuestion();
+          }}
+        >
+          No
+        </button>
       </div>
     </div>
   );
