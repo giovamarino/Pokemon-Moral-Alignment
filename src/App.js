@@ -2,9 +2,12 @@ import { useState } from "react";
 import Title from "./Title";
 import Question from "./Question";
 import Begin from "./Begin";
+import Results from "./Results";
 
 function App() {
-  let [beginbutton, setBeginbutton] = useState(true);
+  let [begin, setBegin] = useState(true);
+  let [question, setQuestion] = useState(false);
+  let [results, setResults] = useState(false);
 
   return (
     <div className="container">
@@ -12,14 +15,29 @@ function App() {
         <Title />
       </header>
       <main>
-        {beginbutton && (
+        {begin && (
           <Begin
-            buttonRemover={() => {
-              setBeginbutton(false);
+            closeBegin={() => {
+              setBegin(false);
+            }}
+            showQuestion={() => {
+              setQuestion(true);
             }}
           />
         )}
-        {!beginbutton && <Question />}
+
+        {question && (
+          <Question
+            closeQuestion={() => {
+              setQuestion(false);
+            }}
+            showResults={() => {
+              setResults(true);
+            }}
+          />
+        )}
+
+        {results && <Results />}
       </main>
     </div>
   );

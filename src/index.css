@@ -46,6 +46,15 @@ p {
   justify-content: space-around;
 }
 
+.Results {
+  background-color: #e5ecf6;
+  padding: 40px 20px;
+  width: 700px;
+  margin: auto;
+  text-align: center;
+  border-radius: 5px;
+}
+
 /* -------------------- */
 
 button {
