@@ -1,0 +1,19 @@
+[
+  {
+    "question": "test0",
+    "good": 0
+  },
+  {
+    "question": "test1",
+    "evil": 0
+  },
+  {
+    "question": "test2",
+    "lawful": 0
+  },
+
+  {
+    "question": "test3",
+    "chaotic": 0
+  }
+]
