@@ -1,19 +1,34 @@
 [
   {
     "question": "test0",
-    "good": 0
+    "vertical": 0
   },
   {
     "question": "test1",
-    "evil": 0
+    "vertical": 0
   },
   {
     "question": "test2",
-    "lawful": 0
+    "horizontal": 0
   },
-
   {
     "question": "test3",
-    "chaotic": 0
+    "horizontal": 0
+  },
+  {
+    "question": "test4",
+    "vertical": 0
+  },
+  {
+    "question": "test5",
+    "vertical": 0
+  },
+  {
+    "question": "test6",
+    "horizontal": 0
+  },
+  {
+    "question": "test7",
+    "horizontal": 0
   }
 ]
