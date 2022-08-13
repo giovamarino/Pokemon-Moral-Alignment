@@ -1,0 +1,56 @@
+[
+  {
+    "image": "/pokemon/celebi.jpg",
+    "alt": "celebi",
+    "vertical": "good",
+    "horizontal": "lawful"
+  },
+  {
+    "image": "/pokemon/eevee.jpg",
+    "alt": "eevee",
+    "vertical": "good",
+    "horizontal": "neutral"
+  },
+  {
+    "image": "/pokemon/charizard.jpg",
+    "alt": "charizard",
+    "vertical": "good",
+    "horizontal": "chaotic"
+  },
+  {
+    "image": "/pokemon/jirachi.jpg",
+    "alt": "jirachi",
+    "vertical": "neutral",
+    "horizontal": "lawful"
+  },
+  {
+    "image": "/pokemon/snorlax.jpg",
+    "alt": "snorlax",
+    "vertical": "neutral",
+    "horizontal": "neutral"
+  },
+  {
+    "image": "/pokemon/jigglypuff.jpg",
+    "alt": "jigglypuff",
+    "vertical": "neutral",
+    "horizontal": "chaotic"
+  },
+  {
+    "image": "/pokemon/mewtwo.jpg",
+    "alt": "mewtwo",
+    "vertical": "evil",
+    "horizontal": "lawful"
+  },
+  {
+    "image": "/pokemon/mimikyu.jpg",
+    "alt": "mimikyu",
+    "vertical": "evil",
+    "horizontal": "neutral"
+  },
+  {
+    "image": "/pokemon/giratina.jpg",
+    "alt": "Giratina",
+    "vertical": "evil",
+    "horizontal": "chaotic"
+  }
+]
