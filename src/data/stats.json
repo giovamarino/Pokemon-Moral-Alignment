@@ -1,6 +1,12 @@
 [
   {
-    "vertical": [],
-    "horizontal": []
+    "horizontal": [],
+    "vertical": []
+  },
+  {
+    "currentImage": "",
+    "currentPokemon": "",
+    "currentVertical": "",
+    "currentHorizontal": ""
   }
 ]
