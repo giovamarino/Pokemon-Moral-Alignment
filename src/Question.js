@@ -15,30 +15,25 @@ const Question = ({ showResults, closeQuestion }) => {
       incrementI();
       if (data[i].vertical === 0 && data[i].reverse) {
         stats[0].vertical.push(posOrNeg * -1);
-        console.log(stats);
       } else if (data[i].vertical === 0) {
         stats[0].vertical.push(posOrNeg);
-        console.log(stats);
       }
       if (data[i].horizontal === 0 && data[i].reverse) {
         stats[0].horizontal.push(posOrNeg * -1);
-        console.log(stats);
       } else if (data[i].horizontal === 0) {
         stats[0].horizontal.push(posOrNeg);
-        console.log(stats);
       }
     }
     // if no questions
     if (i === data.length - 1 && data[i].vertical === 0) {
       stats[0].vertical.push(posOrNeg);
-      console.log(stats);
       closeQuestion();
       showResults();
     }
   };
 
   return (
-    <div className="Question">
+    <div className="box margin1">
       <p>{data[i].question}</p>
       <div>
         <button
