@@ -5,7 +5,8 @@
   },
   {
     "question": "test1",
-    "vertical": 0
+    "vertical": 0,
+    "reverse": "true"
   },
   {
     "question": "test2",
@@ -13,7 +14,8 @@
   },
   {
     "question": "test3",
-    "horizontal": 0
+    "horizontal": 0,
+    "reverse": "true"
   },
   {
     "question": "test4",
@@ -21,14 +23,25 @@
   },
   {
     "question": "test5",
-    "vertical": 0
+    "vertical": 0,
+    "reverse": "true"
   },
   {
     "question": "test6",
-    "horizontal": 0
+    "horizontal": 0,
+    "reverse": "true"
   },
   {
     "question": "test7",
+    "horizontal": 0,
+    "reverse": "true"
+  },
+  {
+    "question": "test8",
     "horizontal": 0
+  },
+  {
+    "question": "test9",
+    "vertical": 0
   }
 ]
