@@ -1,5 +1,5 @@
 import stats from "./data/stats.json";
-import imageHolder from "./data/imageholder.json";
+import pokemon from "./data/pokemon.json";
 
 const Results = () => {
   let vertical = stats[0].vertical.reduce((a, b) => a + b);
@@ -7,75 +7,88 @@ const Results = () => {
 
   let verticalSwitch = () => {
     switch (vertical) {
-      case 2 || 3 || 4:
-        return `good`;
-      case -1 || 0 || 1:
-        return `neutral`;
-      case -5 || -4 || -3 || -2:
-        return `evil`;
+      case 5:
+      case 4:
+      case 3:
+      case 2:
+        return `Good`;
+      case 1:
+      case 0:
+      case -1:
+        return `Neutral`;
+      case -2:
+      case -3:
+      case -4:
+      case -5:
+        return `Evil`;
       default:
-        console.log(`vertical switch default`);
+        console.log(`vertical default`);
         break;
     }
   };
 
   let horizontalSwitch = () => {
     switch (horizontal) {
-      case 2 || 3 || 4:
-        return `lawful`;
-      case -1 || 0 || 1:
-        return `neutral`;
-      case -5 || -4 || -3 || -2:
+      case 5:
+      case 4:
+      case 3:
+      case 2:
+        return `Lawful`;
+      case 1:
+      case 0:
+      case -1:
+        return `Neutral`;
+      case -2:
+      case -3:
+      case -4:
+      case -5:
         return `chaotic`;
       default:
-        console.log(`horizontal switch default`);
+        console.log(`horizontal default`);
         break;
     }
   };
 
-  let imageFinder = () => {
-    for (let i = 0; i < imageHolder.length; i++) {
+  let findPokemon = () => {
+    for (let i = 0; i < pokemon.length; i++) {
       if (
-        imageHolder[i].vertical === verticalSwitch() &&
-        imageHolder[i].horizontal === horizontalSwitch()
+        pokemon[i].vertical === verticalSwitch() &&
+        pokemon[i].horizontal === horizontalSwitch()
       ) {
-        return imageHolder[i].image;
-      }
-    }
-  };
+        stats[1].currentImage = pokemon[i].image;
+        stats[1].currentPokemon = pokemon[i].pokemon;
+        stats[1].currentVertical = pokemon[i].vertical;
+        stats[1].currentHorizontal = pokemon[i].horizontal;
 
-  let altTextFinder = () => {
-    for (let i = 0; i < imageHolder.length; i++) {
-      if (
-        imageHolder[i].vertical === verticalSwitch() &&
-        imageHolder[i].horizontal === horizontalSwitch()
-      ) {
-        return imageHolder[i].alt;
+        console.log(stats[1].currentVertical, pokemon[i].vertical);
+        console.log(stats[1].currentHorizontal, pokemon[i].horizontal);
       }
     }
   };
+  findPokemon();
 
-  let pokemonNameFinder = () => {
-    for (let i = 0; i < imageHolder.length; i++) {
-      if (
-        imageHolder[i].vertical === verticalSwitch() &&
-        imageHolder[i].horizontal === horizontalSwitch()
-      ) {
-        return imageHolder[i].alt;
-      }
-    }
-  };
+  // let handleTrueNeutral = () => {
+  //   if (
+  //     stats[1].currentVertical === `Neutral` &&
+  //     stats[1].currentHorizontal === `Neutral`
+  //   ) {
+  //     return `True Neutral`;
+  //   }
+  // };
+
+  // console.log(handleTrueNeutral());
 
   return (
-    <div className="Results">
-      <p>Results</p>
-      <img src={imageFinder()} alt={altTextFinder()} />
-      <p>{pokemonNameFinder()}</p>
+    <div className="box margin2">
+      <h2>Results</h2>
+      <p>
+        {stats[1].currentHorizontal} {stats[1].currentVertical}
+      </p>
+      <img src={stats[1].currentImage} alt={stats[1].currentPokemon} />
+      <p>{stats[1].currentPokemon}</p>
       <p>
         Vert: {vertical} Horz: {horizontal}
       </p>
-      {/* <p>{verticalSwitch()}</p> */}
-      {/* <p>{horizontalSwitch()}</p> */}
     </div>
   );
 };
