@@ -1,13 +1,56 @@
 [
   {
-    "lawfulGood": "Celebi",
-    "lawfulNeutral": "Jirachi",
-    "lawfulEvil": "Mewtwo",
-    "neutralGood": "Eevee",
-    "trueNeutral": "Snorlax",
-    "neutralEvil": "Mimikyu",
-    "chaoticGood": "Charizard",
-    "chaoticNeutral": "Jigglypuff",
-    "chaoticEvil": "Giratina"
+    "image": "/pokemon/celebi.jpg",
+    "pokemon": "Celebi",
+    "vertical": "good",
+    "horizontal": "lawful"
+  },
+  {
+    "image": "/pokemon/eevee.jpg",
+    "pokemon": "Eevee",
+    "vertical": "good",
+    "horizontal": "neutral"
+  },
+  {
+    "image": "/pokemon/charizard.jpg",
+    "pokemon": "Charizard",
+    "vertical": "good",
+    "horizontal": "chaotic"
+  },
+  {
+    "image": "/pokemon/jirachi.jpg",
+    "pokemon": "Jirachi",
+    "vertical": "neutral",
+    "horizontal": "lawful"
+  },
+  {
+    "image": "/pokemon/snorlax.jpg",
+    "pokemon": "Snorlax",
+    "vertical": "neutral",
+    "horizontal": "neutral"
+  },
+  {
+    "image": "/pokemon/jigglypuff.jpg",
+    "pokemon": "Jigglypuff",
+    "vertical": "neutral",
+    "horizontal": "chaotic"
+  },
+  {
+    "image": "/pokemon/mewtwo.jpg",
+    "pokemon": "Mewtwo",
+    "vertical": "evil",
+    "horizontal": "lawful"
+  },
+  {
+    "image": "/pokemon/mimikyu.jpg",
+    "pokemon": "Mimikyu",
+    "vertical": "evil",
+    "horizontal": "neutral"
+  },
+  {
+    "image": "/pokemon/giratina.jpg",
+    "pokemon": "Giratina",
+    "vertical": "evil",
+    "horizontal": "chaotic"
   }
 ]
