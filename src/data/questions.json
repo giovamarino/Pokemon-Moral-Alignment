@@ -1,47 +1,76 @@
 [
   {
-    "question": "test0",
-    "vertical": 0
-  },
-  {
-    "question": "test1",
+    "question": "I keep track of sensitive information that could hurt someone in the future.",
     "vertical": 0,
     "reverse": "true"
   },
   {
-    "question": "test2",
-    "horizontal": 0
-  },
-  {
-    "question": "test3",
-    "horizontal": 0,
-    "reverse": "true"
-  },
-  {
-    "question": "test4",
-    "vertical": 0
-  },
-  {
-    "question": "test5",
+    "question": "I do not feel guilty when I offend someone.",
     "vertical": 0,
     "reverse": "true"
   },
   {
-    "question": "test6",
+    "question": "Most people consider me good-hearted.",
+    "vertical": 0
+  },
+  {
+    "question": "I often donate to the less fortunate.",
+    "vertical": 0
+  },
+  {
+    "question": "I am in tune with others’ emotions.",
+    "vertical": 0
+  },
+  {
+    "question": "Cheating is sometimes justified.",
     "horizontal": 0,
     "reverse": "true"
   },
   {
-    "question": "test7",
+    "question": "I help others when no one is watching.",
+    "vertical": 0
+  },
+  {
+    "question": "I like to show off.",
+    "vertical": 0,
+    "reverse": "true"
+  },
+  {
+    "question": "I am prone to boredom.",
     "horizontal": 0,
     "reverse": "true"
   },
   {
-    "question": "test8",
+    "question": "Grudges are easy for me to hold.",
+    "horizontal": 0,
+    "reverse": "true"
+  },
+  {
+    "question": "I will lie to get my way.",
+    "horizontal": 0,
+    "reverse": "true"
+  },
+  {
+    "question": "Rules were meant to be broken.",
+    "horizontal": 0,
+    "reverse": "true"
+  },
+  {
+    "question": "My personal space is organized.",
     "horizontal": 0
   },
   {
-    "question": "test9",
-    "vertical": 0
+    "question": "I work best on a consistent schedule.",
+    "horizontal": 0
+  },
+  {
+    "question": "I resent authority.",
+    "horizontal": 0,
+    "reverse": "true"
+  },
+  {
+    "question": "I care about myself more than I do other people.",
+    "vertical": 0,
+    "reverse": "true"
   }
 ]
