@@ -1,25 +1,23 @@
 import stats from "./data/stats.json";
 import pokemon from "./data/pokemon.json";
 
-const Results = () => {
+const Results = ({ closeResults, openBegin }) => {
   let vertical = stats[0].vertical.reduce((a, b) => a + b);
   let horizontal = stats[0].horizontal.reduce((a, b) => a + b);
 
   let verticalSwitch = () => {
     switch (vertical) {
-      case 5:
+      case 8:
+      case 6:
       case 4:
-      case 3:
-      case 2:
         return `Good`;
-      case 1:
+      case 2:
       case 0:
-      case -1:
-        return `Neutral`;
       case -2:
-      case -3:
+        return `Neutral`;
       case -4:
-      case -5:
+      case -6:
+      case -8:
         return `Evil`;
       default:
         console.log(`vertical default`);
@@ -29,20 +27,18 @@ const Results = () => {
 
   let horizontalSwitch = () => {
     switch (horizontal) {
-      case 5:
+      case 8:
+      case 6:
       case 4:
-      case 3:
-      case 2:
         return `Lawful`;
-      case 1:
+      case 2:
       case 0:
-      case -1:
-        return `Neutral`;
       case -2:
-      case -3:
+        return `Neutral`;
       case -4:
-      case -5:
-        return `chaotic`;
+      case -6:
+      case -8:
+        return `Chaotic`;
       default:
         console.log(`horizontal default`);
         break;
@@ -59,36 +55,49 @@ const Results = () => {
         stats[1].currentPokemon = pokemon[i].pokemon;
         stats[1].currentVertical = pokemon[i].vertical;
         stats[1].currentHorizontal = pokemon[i].horizontal;
-
-        console.log(stats[1].currentVertical, pokemon[i].vertical);
-        console.log(stats[1].currentHorizontal, pokemon[i].horizontal);
       }
     }
   };
   findPokemon();
 
-  // let handleTrueNeutral = () => {
-  //   if (
-  //     stats[1].currentVertical === `Neutral` &&
-  //     stats[1].currentHorizontal === `Neutral`
-  //   ) {
-  //     return `True Neutral`;
-  //   }
-  // };
+  let handleTrueNeutral = () => {
+    if (
+      stats[1].currentVertical === `Neutral` &&
+      stats[1].currentHorizontal === `Neutral`
+    ) {
+      return `True Neutral`;
+    } else {
+      return [stats[1].currentHorizontal, stats[1].currentVertical]
+        .join()
+        .replace(",", " ");
+    }
+  };
 
-  // console.log(handleTrueNeutral());
+  let reset = () => {
+    console.log(stats);
+    stats[0].horizontal = [];
+    stats[0].vertical = [];
+    stats[1].currentImage = "";
+    stats[1].currentPokemon = "";
+    stats[1].currentVertical = "";
+    stats[1].currentHorizontal = "";
+    console.log(stats);
+  };
 
   return (
     <div className="box margin2">
-      <h2>Results</h2>
-      <p>
-        {stats[1].currentHorizontal} {stats[1].currentVertical}
-      </p>
+      <h2>{handleTrueNeutral()}</h2>
       <img src={stats[1].currentImage} alt={stats[1].currentPokemon} />
-      <p>{stats[1].currentPokemon}</p>
-      <p>
-        Vert: {vertical} Horz: {horizontal}
-      </p>
+      <h2>{stats[1].currentPokemon}</h2>
+      <button
+        onClick={() => {
+          reset();
+          closeResults();
+          openBegin();
+        }}
+      >
+        Reset
+      </button>
     </div>
   );
 };

@@ -37,7 +37,16 @@ function App() {
           />
         )}
 
-        {results && <Results />}
+        {results && (
+          <Results
+            closeResults={() => {
+              setResults(false);
+            }}
+            openBegin={() => {
+              setBegin(true);
+            }}
+          />
+        )}
       </main>
     </div>
   );
