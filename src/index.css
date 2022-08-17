@@ -84,7 +84,7 @@ button:active {
 
 @media only screen and (max-width: 730px) {
   h1 {
-    font-size: 7.2vw;
+    font-size: 7.4vw;
   }
 }
 
@@ -105,5 +105,14 @@ button:active {
 
   button {
     font-size: 3vw;
+    padding: 18px 8.6vw;
+  }
+
+  .margin1 {
+    margin: 25% auto 0;
+  }
+
+  .margin2 {
+    margin: 15% auto 0;
   }
 }
